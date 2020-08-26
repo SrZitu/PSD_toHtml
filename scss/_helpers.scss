@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+}
+/* HELPER CLASS
+ * -------------------------- */
+
+/* FA based classes */
+
+/*! Modified from font-awesome helper CSS classes - PIXEDEN
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (CSS: MIT License)
+ */
+
+/* makes the font 33% larger relative to the icon container */
+$pink1: #e60b8b;
+$pink: #e60b8a;
+$blue: #2ba7df;
+$blackbtn: #020303;
+$white: #f0f0f0;
+$btn: #020303;
+
+h1 {
+  font-style: normal;
+  font-size: 72px;
+  font-family: $opensans;
+  font-weight: $bold;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: $source-sans-pro;
+  font-style: normal;
+  font-weight: $bold;
+}
+
+h3 {
+  //font-size: 36px;
+  font-family: $source-sans-pro;
+  font-style: normal;
+  font-weight: $bold;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: $source-sans-pro;
+  font-style: normal;
+  font-weight: $semi-bold;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 16px;
+  font-family: $opensans;
+  font-weight: $bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 12px;
+  font-family: $source-sans-pro;
+  font-weight: $light;
+  font-style: normal;
+  line-height: 1.4;
+}
+p {
+  font-size: 16px; // 14px
+  font-style: normal;
+  line-height: 1.4;
+  font-weight: $regular;
+  font-family: $source-sans-pro;
+}
+.custom-btn1 {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  background: $blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    background: $blackbtn;
+    color: white;
+  }
+}
+.custom-btn2 {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  background: $blackbtn;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    background: $blue;
+    color: white;
+  }
+}

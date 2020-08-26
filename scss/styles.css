@@ -1,0 +1,338 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+@font-face {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HELPER CLASS
+ * -------------------------- */
+/* FA based classes */
+/*! Modified from font-awesome helper CSS classes - PIXEDEN
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (CSS: MIT License)
+ */
+/* makes the font 33% larger relative to the icon container */
+h1 {
+  font-style: normal;
+  font-size: 72px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.custom-btn1 {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  background: #2ba7df;
+  text-decoration: none;
+}
+
+.custom-btn1:hover {
+  text-decoration: none;
+  background: #020303;
+  color: white;
+}
+
+.custom-btn2 {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  background: #020303;
+  text-decoration: none;
+}
+
+.custom-btn2:hover {
+  text-decoration: none;
+  background: #2ba7df;
+  color: white;
+}
+
+/* ==========================================================================
+> Header
+========================================================================== */
+.header {
+  padding: 40px 0 300px 0;
+}
+
+.navbar {
+  padding: 0 1rem;
+  background: green !important;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .left-container h3 {
+    font-size: 20px !important;
+  }
+  .right-container h3 {
+    font-size: 20px !important;
+  }
+}
+
+/*image class*/
+@media (max-width: 768px) {
+  .left-container h3 {
+    font-size: 20px !important;
+  }
+  .right-container h3 {
+    font-size: 20px !important;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+/* first section's first row's class name*/
+.shop-image {
+  position: relative;
+  text-align: center;
+  color: white;
+  /* left container of shop-image*/
+  /*right container*/
+}
+
+.shop-image .left-container {
+  position: absolute;
+  color: #2ba7df;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.shop-image .left-container h3 {
+  width: 204px;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.shop-image .right-container {
+  position: absolute;
+  color: #020303;
+  top: 2%;
+  left: 7%;
+  -webkit-transform: translate(2%, 40%);
+          transform: translate(2%, 40%);
+}
+
+.shop-image .right-container h3 {
+  width: 166px;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.shop-image .blue-title {
+  color: #2ba7df;
+}
+
+.shop-image .black-title {
+  color: #020303;
+}
+
+/*fist sctions second row's 3 div's class name is pack*/
+.pack {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.pack .pack-bottom {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 2px;
+}
+
+.pack .pack-bootm-para p,
+.pack h4 {
+  background-color: #e60b8a;
+  color: #000000;
+}
+
+.pack .pack-bootm-para p:hover,
+.pack h4:hover {
+  color: white !important;
+}
+
+.pack:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.product-title-blue {
+  color: #2ba7df;
+}
+
+.product-title-blue span {
+  color: #e60b8a;
+}
+
+/* End of package section*/
+/* popular product section*/
+.popular-product .single-product,
+.popular-product .popular-product-name {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.popular-product .single-product:hover,
+.popular-product .popular-product-name:hover {
+  -webkit-box-shadow: 0 10px 15px black;
+          box-shadow: 0 10px 15px black;
+  color: #f0f0f0;
+  background: #2ba7df;
+}
+/*# sourceMappingURL=styles.css.map */

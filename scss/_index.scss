@@ -1,0 +1,102 @@
+/*image class*/
+@import "responsive";
+// .package {
+//   img {
+//     width: 100%;
+//   }
+// }
+img {
+  width: 100%;
+}
+/* first section's first row's class name*/
+.shop-image {
+  position: relative;
+  text-align: center;
+  color: white;
+
+  /* left container of shop-image*/
+  .left-container {
+    position: absolute;
+    color: $blue;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    // a {
+    //   color: white;
+    //   background-color: $blue;
+    // }
+    h3 {
+      width: 204px;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+  /*right container*/
+  .right-container {
+    position: absolute;
+    color: $blackbtn;
+    top: 2%;
+    left: 7%;
+    transform: translate(2%, 40%);
+    // a {
+    // a {
+    //   color: white;
+    //   background-color: $blackbtn;
+    // }
+    h3 {
+      width: 166px;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .blue-title {
+    color: $blue;
+  }
+  .black-title {
+    color: $blackbtn;
+  }
+}
+
+/*fist sctions second row's 3 div's class name is pack*/
+.pack {
+  // margin: 10px 0px !important;
+  // padding: 10px !important;
+  // border-radius: 5px !important;
+  transition: all 0.4s linear;
+  .pack-bottom {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 2px;
+  }
+  .pack-bootm-para p,
+  h4 {
+    background-color: $pink;
+    color: $black;
+    &:hover {
+      color: white !important;
+    }
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.product-title-blue {
+  color: $blue;
+  span {
+    color: $pink;
+  }
+}
+/* End of package section*/
+/* popular product section*/
+.popular-product {
+  .single-product,
+  .popular-product-name {
+    transition: all 0.5s linear;
+    &:hover {
+      box-shadow: 0 10px 15px rgb(0, 0, 0);
+      color: $white;
+      background: $blue;
+    }
+  }
+}
